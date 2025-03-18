@@ -1,0 +1,152 @@
+body.category {
+  .section-title {
+    margin: 0;
+  }
+}
+#excerpt {
+  width: 100%;
+  .excerpt-item {
+    position: relative;
+    border: 1px solid $border_color;
+    border-radius: 8px;
+    padding-bottom: 1.25rem;
+    @include myTransition(.5s);
+    .card-title {
+      margin-top: 1.25rem;
+      a {
+        @include textSize(1.25rem, 26px);
+        color: $dark;
+        font-family: $light;
+        display: block;
+        min-height: 52px;
+        &::after {
+          content: '';
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          z-index: 10;
+        }
+      }
+    }
+    img {
+      display: inline-block;
+      @include myTransition(.2s);
+    }
+    .btn {
+      margin-top: 10px;
+      padding: 0 40px;
+      color: $white;
+      line-height: 40px;
+    }
+    &:hover {
+      box-shadow: 4px 4px 20px rgba($black, .2);
+      .btn {
+        background-color: $accent;
+        color: $dark;
+      }
+    }
+    .thumbnail {
+      text-align: center;
+    }
+    .content {
+      padding: 0 1rem;
+      @media #{$min_lg} {
+        p {
+        min-height: 110px;
+        }
+      }
+    }
+  }
+  .excerpt-item.offer {
+    padding: 1.25rem;
+    .btn {
+      margin-top: 1.25rem;
+    }
+    &:hover .thumbnail img {
+      filter: $filter_accent;
+    }
+  }
+  .excerpt-item.offer.no-filter {
+    &:hover .thumbnail img {
+      filter: none;
+    }
+  }
+}
+body.page-id-83 {
+  #excerpt {
+    .excerpt-item {
+      img {
+        max-height: 139px;
+      }
+    }
+  }
+}
+body.archive {
+  #content {
+    padding: 1rem 0 3rem 0;
+  }
+  a h2 {
+    @include myTransition(.5s);
+    &:hover {
+      color: $dark;
+    }
+  }
+  .btn {
+    display: inline-block;
+    background-color: $accent;
+    color: $white;
+    margin-top: 10px;
+    padding: 15px 30px;
+    &:hover {
+      background-color: $dark;
+    }
+  }
+}
+body.search {
+  .price {
+    display: block;
+    margin-bottom: 1rem;
+  }
+}
+.pagination {
+  display: inline-block;
+  text-align: center;
+  margin: 30px 0;
+
+  ul.page-numbers {
+    li {
+      display: inline-block;
+      margin: 0 8px;
+      padding: 0;
+
+      &::before {
+        width: auto;
+        margin: auto;
+        content: "";
+      }
+
+      a.page-numbers,
+      span.page-numbers {
+        display: block;
+        font-size: 1em;
+        padding: 3px 8px;
+        border: 1px solid rgba($dark, .1);
+        color: $dark;
+        text-decoration: none;
+        text-align: center;
+
+        &:hover {
+          border-color: rgba($dark, .4);
+          text-decoration: none;
+        }
+      }
+
+      a.current,
+      span.current {
+        border-color: rgba($dark, .4);
+      }
+    }
+  }
+}

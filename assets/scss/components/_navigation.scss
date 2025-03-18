@@ -1,0 +1,167 @@
+#menu-toggle {
+  display: block;
+  position: absolute;
+  top: 60px;
+  right: 60px;
+  z-index: 998;
+  @media #{$max_md} {
+    top: 30px;
+    right: 30px;
+  }
+  @media #{$min_lg} {
+    display: none;
+  }
+}
+#header.no-thumbnail #menu-toggle {
+  &::before {
+    filter: $filter_blue;
+  }
+}
+#main-nav {
+  margin: 94px 60px 0 0;
+  @media #{$max_xxl} {
+    margin-top: 74px;
+  }
+  @media #{$max_xl} {
+    margin: 20px auto;
+  }
+  @media #{$max_lg} {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    background: $white url('../img/menu-bg-op.jpg') center center;
+    background-size: cover;
+    overflow-y: scroll;
+    z-index: 997;
+  }
+  .menu {
+    display: flex;
+    align-items: center;
+    @media #{$max_lg} {
+      flex-direction: column;
+      margin: 140px 0 60px;
+      text-align: center;
+    }
+    li {
+      position: relative;
+      @media #{$max_lg} {
+        display: block;
+      }
+      a {
+        display: block;
+        font-family: $bold;
+        @include textSize(1rem, 1);
+        color: $white;
+        text-shadow: 0 0 4px $dark;
+        text-transform: uppercase;
+        padding: 10px 15px;
+        @include myTransition(.4s);
+        @media #{$max_xxl} {
+          padding: 10px;
+          font-size: .9rem;
+        }
+        @media #{$max_lg} {
+          font-size: 1.2rem;
+          padding: 20px 15px;
+        }
+        // @media #{$min_lg} {
+        //   &:hover {
+        //     color: $dark;
+        //   }
+        // }
+      }
+      .sub-menu {
+        display: none;
+        @media #{$min_lg} {
+          background: $white url('../img/menu-bg-op.jpg') center center;
+          background-size: cover;
+          position: absolute;
+          background-color: $white;
+          padding: 50px 50px;
+          min-width: 600px;
+          left: 50%;
+          top: 50px;
+          -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+        }
+        @media #{$max_lg} {
+          background-color: rgba($white, .8);
+          padding: 30px 0;
+        }
+        li {
+          a {
+            text-transform: none;
+            line-height: 22px;
+            padding: 0;
+            margin: 10px 0;
+            font-size: 1.2rem;
+            font-family: $regular;
+            text-shadow: none;
+            color: $dark;
+            @media #{$max_lg} {
+              padding: 10px 15px;
+              font-size: 1rem;
+            }
+          }
+        }
+      }
+    }
+    li.rezervation-toggle, li.accent {
+      background-color: $accent;
+      border-radius: 8px;
+      margin-left: 15px;
+      @media #{$max_lg} {
+        margin-left: 0;
+      }
+      @media #{$min_lg} {
+        
+        &:hover {
+          a {
+            // color: $dark;
+            text-shadow: none;
+          }
+        }
+      }
+      @media #{$min_lg} {
+        .sub-menu li a:hover {
+          color: darken($dark, 15%);
+        }
+      }
+    }
+  }
+}
+#header.no-thumbnail #main-nav .menu {
+  li {
+    a {
+    color: $dark;
+    text-shadow: none;
+    }
+    .sub-menu li a {
+      color: $dark;
+    }
+  }
+  li.rezervation-toggle a, li.accent a {
+    color: $white;
+    text-shadow: none;
+  }
+}
+#header.scroll #main-nav {
+  margin: 30px 60px 20px 0;
+  @media #{$max_xl} {
+    margin: 10px auto;
+  }
+  li {
+    a {
+      color: $dark;
+      text-shadow: none;
+    }
+  }
+  li.rezervation-toggle a, li.accent a {
+    color: $white;
+    text-shadow: none;
+  }
+}

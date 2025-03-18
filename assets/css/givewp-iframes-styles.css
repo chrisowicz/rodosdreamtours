@@ -1,0 +1,236 @@
+:root {
+  --give-donor-dashboard-accent-color: #E30C13 !important;
+}
+.give-donor-dashboard-dashboard__figure {
+  color: #e30c13 !important;
+}
+
+.give-donor-dashboard__auth-modal-heading {
+  text-indent: -420px;
+}
+.give-donor-dashboard__auth-modal-heading::after {
+  content: 'Zaloguj się do panelu darczyńcy';
+  margin-left: 45px;
+}
+
+.give-donor-dashboard__auth-modal-instruction:first-child {
+  text-indent: -9999px;
+}
+.give-donor-dashboard__auth-modal-instruction:first-child::after {
+  content: 'Wyślij nam swów email, który podawałeś podczas dotacji. W wiadomości zwrotnej otrzymasz dostęp do panelu darczyńcy';
+  display: block;
+  text-indent: 0;
+}
+
+.give-donor-dashboard__auth-modal-row {
+  display: block !important;
+}
+
+.give-donor-dashboard__auth-modal-form:first-of-type .give-donor-dashboard-button.give-donor-dashboard-button--primary {
+  position: relative;
+  display: inline-block;
+  text-indent: -9999px;
+  overflow: hidden;
+  width: 90px;
+}
+.give-donor-dashboard__auth-modal-form:first-of-type .give-donor-dashboard-button.give-donor-dashboard-button--primary::before {
+  position: absolute;
+  display: block;
+  text-indent: 0;
+  content: 'Wyślij';
+}
+
+.give-donor-dashboard__auth-modal-instruction:last-of-type {
+  display: none;
+}
+
+.give-donor-dashboard__auth-modal-form:last-of-type .give-donor-dashboard-button.give-donor-dashboard-button--primary {
+  position: relative;
+  display: inline-block;
+  text-indent: -9999px;
+  overflow: hidden;
+  width: 130px;
+}
+
+.give-donor-dashboard__auth-modal-form:last-of-type .give-donor-dashboard-button.give-donor-dashboard-button--primary::before {
+  position: absolute;
+  display: block;
+  text-indent: 0;
+  content: 'Zaloguj się';
+}
+
+.give-donor-dashboard-donor-info {
+  display: none;
+}
+
+.give-donor-dashboard-heading:nth-of-type(1) {
+  position: relative;
+  display: block;
+  text-indent: -9999px;
+}
+.give-donor-dashboard-heading:nth-of-type(1)::after {
+  position: absolute;
+  display: block;
+  text-indent: 0;
+  content: 'Twoje statystyki';
+  top: 0;
+}
+
+.give-donor-dashboard-tab-content .give-donor-dashboard-text-control:nth-of-type(6) .give-donor-dashboard-text-control__label {
+  display: block;
+  text-indent: -9999px;
+}
+.give-donor-dashboard-tab-content .give-donor-dashboard-text-control:nth-of-type(6) .give-donor-dashboard-text-control__label::after {
+  display: block;
+  text-indent: 0;
+  content: 'Główny mail';
+}
+
+.give-donor-dashboard__add-primary-address .give-donor-dashboard-heading {
+  text-indent: -9999px;
+}
+.give-donor-dashboard__add-primary-address .give-donor-dashboard-heading::after {
+  position: absolute;
+  display: block;
+  text-indent: 0;
+  content: 'Nie masz ustawionego żadnego adresu!';
+  width: 200px;
+  top: 10px;
+}
+@media (max-width: 575.9px) {
+  .give-donor-dashboard__add-primary-address .give-donor-dashboard-heading::after {
+    display: none;
+  }
+}
+.give-donor-dashboard-dashboard__stat:nth-of-type(2) .give-donor-dashboard-dashboard__detail {
+  text-indent: -9999px;
+}
+.give-donor-dashboard-dashboard__stat:nth-of-type(2) .give-donor-dashboard-dashboard__detail::after {
+  display: block;
+  text-indent: 0;
+  content: 'Wartość wszystkich';
+}
+.give-donor-dashboard-dashboard__stat:nth-of-type(3) .give-donor-dashboard-dashboard__detail {
+  text-indent: -9999px;
+}
+.give-donor-dashboard-dashboard__stat:nth-of-type(3) .give-donor-dashboard-dashboard__detail::after {
+  display: block;
+  text-indent: 0;
+  content: 'Średnia darowizna';
+}
+.give-donor-dashboard-logout .give-donor-dashboard-tab-link {
+  text-indent: -9999px;
+  position: relative;
+  display: block;
+}
+.give-donor-dashboard-logout .give-donor-dashboard-tab-link::after {
+  position: absolute;
+  top: 0;
+  display: block;
+  text-indent: 0;
+  content: 'Wyloguj się';
+}
+
+.give-donor-dashboard-table__donation-time {
+  display: none;
+}
+
+.give-donor-dashboard-avatar-control__instructions::before {
+  content: 'Przeciągnij tutaj lub kliknij w to pole aby wybrać awatar.';
+}
+.give-donor-dashboard-avatar-control__instructions p {
+  display: none;
+}
+
+.give-donor-dashboard-radio-control .give-donor-dashboard-radio-control__legend {
+  text-indent: -9999px;
+}
+.give-donor-dashboard-radio-control .give-donor-dashboard-radio-control__legend::after {
+  display: block;
+  text-indent: 0;
+  content: 'Anonimowość';
+}
+
+.give-donor-dashboard-radio-control .give-donor-dashboard-radio-control__description {
+  text-indent: -9999px;
+}
+.give-donor-dashboard-radio-control .give-donor-dashboard-radio-control__description::after {
+  display: block;
+  text-indent: 0;
+  content: 'Dzięki tej opcji Twój awatar, imię, komentarze dotyczące darowizn i inne informacje nie będą pojawiać się publicznie na stronach fundacji.';
+}
+
+.give-donor-dashboard-radio-control {
+  position: relative;
+}
+.give-donor-dashboard-radio-control__option {
+  position: relative;
+}
+.give-donor-dashboard-radio-control .give-donor-dashboard-radio-control__option label {
+  text-indent: -9999px;
+}
+.give-donor-dashboard-radio-control div:nth-of-type(2)::after {
+  content: 'Publiczne';
+  position: absolute;
+  top: 0;
+  left: 30px;
+  font-size: 0.9rem;
+  color: #767676;
+  margin-top: 3px;
+}
+.give-donor-dashboard-radio-control div:nth-of-type(3)::after {
+  content: 'Prywatne';
+  position: absolute;
+  top: 0;
+  left: 30px;
+  font-size: 0.9rem;
+  color: #767676;
+  margin-top: 3px;
+}
+
+.give-donor-dashboard-logout-modal__header {
+  text-indent: -400px;
+}
+.give-donor-dashboard-logout-modal__header::after {
+  margin-left: 45px;
+  content: 'Na pewno chcesz się wylogować?';
+}
+.give-donor-dashboard-logout-modal__frame .give-donor-dashboard-button.give-donor-dashboard-button--primary {
+  text-indent: -9999px;
+}
+.give-donor-dashboard-logout-modal__frame .give-donor-dashboard-button.give-donor-dashboard-button--primary::after {
+  display: block;
+  text-indent: 0;
+  content: 'Tak, wyloguj';
+}
+.give-donor-dashboard-logout-modal__cancel {
+  text-indent: -9999px;
+}
+.give-donor-dashboard-logout-modal__cancel::after {
+  display: block;
+  text-indent: 0;
+  content: 'Jednak zostanę :)';
+}
+
+.introduction .income-stats .count .text {
+  position: relative;
+  text-indent: -9999px;
+}
+.introduction .income-stats .count .text:after {
+  position: absolute;
+  display: block;
+  text-indent: 0;
+  content: 'wsparcie';
+  top: 0;
+  left: 50%;;
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+.iframe-loader div div {
+  filter: invert(9%) sepia(97%) saturate(7379%) hue-rotate(355deg) brightness(92%) contrast(94%);
+}
+
+.choose-amount .give-donation-levels-wrap .give-donation-level-btn>.currency.currency--after {
+  display: none;
+}

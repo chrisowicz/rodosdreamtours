@@ -1,0 +1,85 @@
+.icon::before {
+  content: '';
+  cursor: pointer;
+  @include myTransition(.5s);
+  background-size: 40px;
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+}
+.icon-menu::before {
+  background: url('../img/menu.svg') 0 0 no-repeat;
+  width: 50px;
+  height: 50px;
+  filter: $filter_accent;
+}
+.icon-close::before {
+  background: url('../img/close.svg') 0 0 no-repeat;
+  width: 50px;
+  height: 50px;
+  filter: $filter_accent;
+}
+.icon-mail::before {
+  background: url('../img/mail.svg') 0 0 no-repeat;
+}
+.icon-phone::before {
+  background: url('../img/phone.svg') 0 0 no-repeat;
+}
+.icon-phone-grace::before {
+  background: url('../img/phone-grace.svg') 0 0 no-repeat;
+}
+.icon-whatsapp::before {
+  background: url('../img/whatsapp.svg') 0 0 no-repeat;
+}
+.icon-messenger::before {
+  background: url('../img/messenger.svg') 0 0 no-repeat;
+}
+.icon-instagram::before {
+  background: url('../img/icons/instagram.svg') 0 0 no-repeat;
+}
+.icon-facebook::before {
+  background: url('../img/icons/facebook.svg') 0 0 no-repeat;
+}
+.icon-pin::before {
+  background: url('../img/icons/pin.svg') 0 0 no-repeat;
+}
+.icon-quick-contact-toggle::before {
+  background: url('../img/icons/quck-contact-toggle.svg') 0 0 no-repeat;
+  background-size: 60px;
+  width: 60px;
+  height: 60px;
+  display: inline-block;
+}
+.icon-quick-contact-close::before {
+  background: url('../img/icons/quick-contact-close.svg') 0 0 no-repeat;
+  background-size: 60px;
+  width: 60px;
+  height: 60px;
+  display: inline-block;
+}
+.back-to-top {
+  position: fixed;
+  right: 15px;
+  bottom: 15px;
+  // display: flex;
+  // align-items: center;
+  // justify-content: center;
+  // width: 100px;
+  // height: 100px;
+  @include myTransition(1s);
+  z-index: 10;
+  &::before {
+    background: url(../img/icons/arrow-down-circle.svg) 0 0 no-repeat;
+    width: 104px;
+    height: 104px;
+    // filter: $filter_white;
+  }
+  @media #{$min_lg} {
+    &:hover {
+      rotate: 180deg;
+    }
+  }
+}
+.rotate::before {
+  rotate: 180deg;
+}

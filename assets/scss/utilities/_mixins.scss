@@ -1,0 +1,34 @@
+// Object zoom
+@mixin myZoom($sc) {
+  -webkit-transform: scale($sc);
+  -ms-transform: scale($sc);
+  transform: scale($sc);
+}
+
+// Fonts
+@mixin textSize($fs, $lh) {
+  font-size: $fs;
+  line-height: $lh;
+}
+
+// Width and Height
+@mixin boxSize($w, $h) {
+  width: $w;
+  height: $h;
+}
+
+// Transicion
+@mixin myTransition($speed) {
+  transition: all $speed ease-in-out;
+}
+
+// My rotateZ
+@mixin myRotateZ($rotate) {
+  transform: rotateZ($rotate);
+}
+
+// My font
+@mixin myFont($ff, $fw) {
+  font-family: $ff;
+  font-weight: $fw;
+}

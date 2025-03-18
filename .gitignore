@@ -1,0 +1,6 @@
+.DS_Store
+node_modules
+*.swp
+dist
+package-lock.json
+.sync.ffs_db

@@ -1,0 +1,25 @@
+// Breakpionts 
+$landscape: "only screen and (max-height: 575px) and (orientation:landscape)";
+$max_xxl: "(max-width: 1600px)";
+$max_xl: "(max-width: 1280px)";
+$max_lg: "(max-width: 992px)";
+$max_md: "(max-width: 767.9px)";
+$max_sm: "(max-width: 575.9px)";
+$max_460: "(max-width: 459.9px)";
+$lg_up_to_xl: "(min-width: 992.1px) and (max-width: 1280px)";
+$sm_up_to_md: "(min-width: 576px) and (max-width: 768px)";
+$min_lg: "(min-width: 992px)";
+$min_width_1920: "(min-width: 1920.1px)";
+$minW_1360: "(min-width: 1360px)";
+
+$padding_x: 0 1rem;
+$padding_y: 1rem 0;
+$padding: 1rem;
+
+// Fonts
+
+$light: mf_light;
+$regular: mf_regular;
+$bold: mf_bold;
+$mf_semibold_italic: mf_semibold_italic;
+$mf_black: mf_black;

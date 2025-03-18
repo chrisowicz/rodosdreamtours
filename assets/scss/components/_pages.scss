@@ -1,0 +1,210 @@
+#page-hero-section {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  h1#page-title-hero {
+    position: absolute;
+    left: 60px;
+    bottom: 60px;
+    font-size: 3vw;
+    color: $white;
+    text-shadow: 0 0 3px $dark;
+    @media #{$max_xl} {
+      font-size: 6vw;
+    }
+    @media #{$max_md} {
+      left: 30px;
+      bottom: 30px;
+      gap: 20px;
+      max-width: 75%;
+    }
+    &::before {
+      background-color: $white;
+    }
+  }
+  img.hero-image {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+  }
+}
+@media #{$max_lg} {
+  body.page-id-41 #page-hero-section {
+    // background-position-x: -200px;
+    background-image: url('/wp-content/uploads/2023/04/turkish-national-flag-drawn-decorative-bead.jpg') !important;
+  }
+  body.page-id-418 #page-hero-section {
+    // background-position-x: -200px;
+    background-image: url('/wp-content/uploads/2023/04/rodos-pion.jpg') !important;
+  }
+  body.page-id-37 #page-hero-section {
+    background-position-x: -800px;
+  }
+  body.page-id-27 #page-hero-section {
+    background-position-x: -135px;
+  }
+  body.page-id-35 #page-hero-section {
+    background-position: 88% bottom;
+  }
+  body.page-id-767 #page-hero-section {
+    background-position: 20% bottom;
+  }
+}
+
+
+#content {
+  width: 80%;
+  margin: 60px auto;
+  @media #{$max_lg} {
+    width: calc(100% - 60px);
+    margin: 0;
+    padding: 30px;
+  }
+  p {
+    margin-bottom: 30px;
+    @media #{$max_lg} {
+      margin-bottom: 10px;
+    }
+  }
+  h2 {
+    color: $blue;
+    margin-bottom: 20px;
+    @media #{$max_lg} {
+      margin-bottom: 10px;
+    }
+  }
+  h2.wp-block-heading {
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba($dark, .2);
+  }
+  h3 {
+    color: $red;
+    margin-bottom: 20px;
+    @media #{$max_lg} {
+      margin-bottom: 10px;
+    }
+  }
+  ul li {
+    display: flex;
+    align-items: center;
+  }
+  .wp-block-column {
+    ul li {
+      padding: 5px 0 5px 16px;
+    }
+  }
+  .wp-block-separator {
+    margin: 2rem 0;
+  }
+  .wp-block-table {
+    margin-bottom: 30px;
+    @media #{$max_lg} {
+      margin-bottom: 10px;
+    }
+  }
+  ul {
+    li {
+      width: 100%;
+      padding: 10px 10px 10px 16px;
+      display: flex;
+      align-items: center;
+      position: relative;
+      &::before {
+        display: inline-block;
+        content: "";
+        background: url("../img/icons/right.svg") 0 0 no-repeat;
+        width: 6px;
+        height: 10px;
+        padding-right: 10px;
+        filter: $filter_blue;
+        @include myTransition(.2s);
+      }
+      ul {
+        li {
+          display: list-item;
+          margin-left: 30px;
+          padding-left: 0;
+          list-style: circle;
+          &::before {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+  .ui-datepicker-header {
+    background-color: $blue;
+  }
+  .ui-datepicker-title {
+    text-shadow: none;
+    color: $white;
+  }
+  .ui-datepicker-calendar .ui-state-default {
+    background-color: #ededed;
+  }
+  .ui-datepicker-calendar .ui-state-active {
+    background-color: $blue;
+    border: none;
+    text-shadow: none;
+  }
+  #fbuilder .slots {
+    border: none;
+    padding: 0;
+    margin: 10px 0;
+    box-shadow: none;
+  }
+  #fbuilder span.uh {
+    color: $accent;
+  }
+  #fbuilder .medium {
+    padding: 0 15px;
+  }
+  #fbuilder .top_aligned .fields label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  #fbuilder .pbSubmit {
+    display: inline-block;
+    background: $red;
+    padding: 0 20px;
+    color: $white;
+    font-size: 20px;
+    border-radius: 8px;
+    @include myFont($bold, 400);
+    line-height: 50px;
+    @include myTransition(.5s);
+    &:hover {
+      background-color: $dark;
+    }
+  }
+  #fbuilder input[type="checkbox"] {
+    display: inline-block;
+  }
+  #fbuilder .slots div {
+    border: none;
+    margin-top: 10px;
+    background-color: $accent;
+    a {
+      background: transparent;
+      color: $white;
+    }
+  }
+  #fbuilder .slots {
+    span {
+      color: $blue;
+    }
+  }
+  .sb_item {
+    a {
+      color: $blue;
+    }
+  }
+}
+// body.page-child {
+//   .wp-block-columns {
+//     align-items: center !important;
+//   }
+// }

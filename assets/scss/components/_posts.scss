@@ -1,0 +1,19 @@
+#content {
+  ul li {
+    display: flex;
+    align-items: center;
+  }
+  .wp-block-column {
+    ul li {
+      padding: 5px 0 5px 16px;
+    }
+  }
+  .wp-block-separator {
+    margin: 2rem 0;
+  }
+}
+body.page-child {
+  .wp-block-columns {
+    align-items: center !important;
+  }
+}
