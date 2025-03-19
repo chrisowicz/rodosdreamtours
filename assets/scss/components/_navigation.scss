@@ -110,6 +110,15 @@
         }
       }
     }
+    @media #{$min_lg} {
+      #menu-item-67 {
+        .sub-menu {
+          left: auto;
+          right: 0;
+          transform: none;
+        }
+      }
+    }
     li.rezervation-toggle, li.accent {
       background-color: $accent;
       border-radius: 8px;

@@ -113,9 +113,14 @@ section#about-trips {
         font-family: $bold;
       }
     }
-    p {
+    p, a {
       @include textSize(1.25rem, 1.2);
       margin-bottom: 15px;
+    }
+    a {
+      display: block;
+      color: $red;
+      margin-top: 30px;
     }
   }
 
