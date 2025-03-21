@@ -455,6 +455,15 @@ section#book-a-trip {
     right: 10px;
     bottom: 10px;
   }
+  #quick-contact-toggle {
+    width: 60px;
+    height: 60px;
+    &::before {
+      display: block;
+      width: 60px;
+      height: 60px;
+    }
+  }
   #qc-content {
     position: absolute;
     bottom: 80px;

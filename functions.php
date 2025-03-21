@@ -10,7 +10,7 @@ function gp_styles() {
 	wp_enqueue_style('lightgallery', get_template_directory_uri().'/dist/css/lightgallery.min.css');
 	// wp_enqueue_style('grid', get_template_directory_uri().'/dist/css/grid.min.css');
 	wp_enqueue_style('splide', get_template_directory_uri().'/dist/css/splide.min.css');
-	wp_enqueue_style('my-global-style', get_template_directory_uri().'/dist/css/global-styles.min.css?v=28022024:3');
+	wp_enqueue_style('my-global-style', get_template_directory_uri().'/dist/css/global-styles.min.css?v=19032025:2');
 }
 add_action('wp_enqueue_scripts', 'gp_styles');
 

@@ -41,10 +41,10 @@
   .menu {
     display: flex;
     align-items: center;
+    text-align: center;
     @media #{$max_lg} {
       flex-direction: column;
       margin: 140px 0 60px;
-      text-align: center;
     }
     li {
       position: relative;
@@ -118,6 +118,12 @@
           transform: none;
         }
       }
+      #menu-item-58 {
+        .sub-menu {
+          left: 0;
+          transform: none;
+        }
+      }
     }
     li.rezervation-toggle, li.accent {
       background-color: $accent;
@@ -172,5 +178,8 @@
   li.rezervation-toggle a, li.accent a {
     color: $white;
     text-shadow: none;
+  }
+  li.accent .sub-menu li a {
+    color: $dark; 
   }
 }
